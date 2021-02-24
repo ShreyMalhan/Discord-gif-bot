@@ -1,19 +1,19 @@
-#Discord Gif Bot
+# Discord Gif Bot
 
-####This project is deployed via [Heroku](https://dashboard.heroku.com/apps/discord-gif-b0t) 
+#### This project is deployed via [Heroku](https://dashboard.heroku.com/apps/discord-gif-b0t) 
 <br>
 
 To add this bot to your Discord Server type `discord.com/oauth2/authorize?client_id=798686796824969288&scope=bot` as the url.
 **_Note:_** I am using free deployment service provided by heroku which limits the activity of this bot to 550 hours per month. If you add this bot to your server and find it offline, it means the bot has used all its 550 hours for the month.
 
 <br>
-###About The Project
+### About The Project
 Sending gifs has become a major part of our conversations and helps to convey our feelings in a humours way.  
 As the name suggests, this is a Discord bot written in JavaScript which helps you send a random gif related to the text messages you send in the chat.  
 
 
 <br>
-###How it Works
+### How it Works
 Many webites and API's sole purpose is to stay up-to-date with the gif community. They provide a way to search for the most relevant gif their users are looking for.  
 This bot also uses an API provided by Tenore to fullfil its responsibility, that is to share your emotions via gifs.
 
@@ -22,7 +22,7 @@ When the user wants to send a gif, all he needs to do is add `!gif` in front of 
 ![A gif of parkour](Images/parkoure.gif)
 <br>
 
-###Requirements
+### Requirements
 Before we dive into the code, lets first lists the things you need to write your own version of the bot.
 
 * A Bot Tokken
@@ -35,7 +35,7 @@ Since this bot sends requests to an external API to search for the keywords prov
 **Caution:** Same as Bot Tokken, an API key should also be never revealed.
 
 <br>
-###Understanding the Code
+### Understanding the Code
 Now you are all set up to be the Mark Zuckerberg for this bot. But, to work on the functionality of your bot, you first need to connect it to your code.
 
 >const Discord = require('discord.js');
@@ -51,7 +51,7 @@ The bot then waits for the response from the API. Once it receives the response,
 And this is how you send a gif with a bot that you have created. *Pretty neat right!*
 
 <br>
-####WrapUp
+#### WrapUp
 I hope you learnt something from this reading. Feel free to use this bot in your discord server or fork this whole repository. 
 
 >“The computer was born to solve problems that did not exist before.”
