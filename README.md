@@ -42,8 +42,10 @@ Since this bot sends requests to an external API to search for the keywords prov
 Now you are all set up to be the Mark Zuckerberg for this bot. But, to work on the functionality of your bot, you first need to connect it to your code.
 
 >const Discord = require('discord.js');
-const client = new Discord.Client();
-client.login(process.env.BOTTOKEN); 
+>
+>const client = new Discord.Client();
+>
+>client.login(process.env.BOTTOKEN); 
 
 The code mentioned above inside `bot.js` takes care of it for you. Notice the `process.env.BOTTOKEN`, it is where your bot tokken will go but since it is a lethal error to reveal your token to outside world, I wrapped it inside an [envirnment variable](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) to keep it safe.
 
