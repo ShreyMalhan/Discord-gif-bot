@@ -1,11 +1,12 @@
 console.log('Hello World');
+require('dotenv').config();
 
 const fetch = require('node-fetch');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.BOTTOKEN); 
 
-require('dotenv').config();
+
 
 client.on('ready', readyDiscord);
 
@@ -19,7 +20,7 @@ async function spamMessage(msg){
     let tokens = msg.content.split(" ");
 
     if(tokens[0] === '!bot'){
-        msg.channel.send('Hi, I am The Gif Bot. My role on this server will be to help you send a cool gif. All you need to do is type \" !gif \" in front of your message and I will find and send a gif related to your message. Try \ " !gif Elon Musk \" ')
+        msg.channel.send('Hi, I am The Gif Bot. My role on this server will be to help you send a cool gif. All you need to do is type \" !gif \" in front of your message and I will find and send a gif related to your message. Try \" !gif Elon Musk \" ')
     }
     else if(tokens[0] === '!gif'){
         let keywords = 'video games';
