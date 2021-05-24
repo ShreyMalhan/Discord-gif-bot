@@ -19,10 +19,10 @@ client.on('message', spamMessage);
 async function spamMessage(msg){
     let tokens = msg.content.split(" ");
 
-    if(tokens[0] === '!bot'){
+    if(tokens[0] === 'bot'){
         msg.channel.send('Hi, I am The Gif Bot. My role on this server will be to help you send a cool gif. All you need to do is type \" !gif \" in front of your message and I will find and send a gif related to your message. Try \" !gif Elon Musk \" ')
     }
-    else if(tokens[0] === '!gif'){
+    else if(tokens[0] === 'gif'){
         let keywords = 'video games';
             if(tokens.length > 1){
                 keywords = tokens.slice(1, tokens.length).join(" ");
